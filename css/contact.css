@@ -1,0 +1,49 @@
+.contact{
+    padding: 6.25rem 1.25rem;
+}
+textarea, input {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.62rem;
+    margin-bottom: 0.62rem;
+    border: 1px solid #f0e9ff;
+    border-radius: 0.32rem;
+    color: #495057;
+    padding-left: 1.12rem;
+    font-size: 0.81rem;
+    background: transparent;
+    box-sizing: border-box;
+    -webkit-border-radius: 0.32rem;
+    -moz-border-radius: 0.32rem;
+    -ms-border-radius: 0.32rem;
+    -o-border-radius: 0.32rem;
+}
+textarea:focus, 
+input:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.half-flex {
+    display: flex;
+}
+.contact__firstname {
+    flex: 1;
+    padding-right: 0.93rem;
+}
+.contact__email {
+    flex: 1;
+    padding-left: 1rem;
+}
+.contact__send {
+    margin-top: 1.87rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .half-flex {
+        flex-direction: column;
+    }
+    .contact__firstname,
+    .contact__email {
+        padding: 0;
+    }
+}
